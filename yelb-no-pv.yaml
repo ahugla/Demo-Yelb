@@ -80,7 +80,7 @@ spec:
     spec:
       containers:
       - name: yelb-ui
-        image: harbor.cpod-aca-pks.az-lab.shwrfr.com/yelb/yelb-ui:0.4
+        image: harbor.cpod-kaps4biz-dc2.az-lab.shwrfr.com/yelb/yelb-ui:0.3
         ports:
         - containerPort: 80
 ---
@@ -99,7 +99,7 @@ spec:
     spec:
       containers:
       - name: redis-server
-        image: harbor.cpod-aca-pks.az-lab.shwrfr.com/yelb/redis:4.0.2
+        image: harbor.cpod-kaps4biz-dc2.az-lab.shwrfr.com/yelb/redis:4.0.2
         ports:
         - containerPort: 6379
 ---
@@ -118,7 +118,7 @@ spec:
     spec:
       containers:
       - name: yelb-db
-        image: harbor.cpod-aca-pks.az-lab.shwrfr.com/yelb/yelb-db:0.3
+        image: harbor.cpod-kaps4biz-dc2.az-lab.shwrfr.com/yelb/yelb-db:0.3
         ports:
         - containerPort: 5432
 ---
@@ -137,6 +137,6 @@ spec:
     spec:
       containers:
       - name: yelb-appserver
-        image: harbor.cpod-aca-pks.az-lab.shwrfr.com/yelb/yelb-appserver:0.4
+        image: harbor.cpod-kaps4biz-dc2.az-lab.shwrfr.com/yelb/yelb-appserver:0.3
         ports:
-- containerPort: 4567
+        - containerPort: 4567
